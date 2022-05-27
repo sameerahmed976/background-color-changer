@@ -1,0 +1,119 @@
+/* start of default resets */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;800&display=swap");
+
+:root {
+  --primary-color: #420039;
+  --secondary-color: #932f6d;
+  --text-background-color: #dcccff;
+  --background-color: #f6f2ff;
+  --transition: all 0.8s ease-in-out;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.section-center {
+  max-width: 1170px;
+  margin: 0 auto;
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  border: none;
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: white;
+  margin: 0 auto;
+  padding: 0.8rem 2rem;
+  text-transform: capitalize;
+  letter-spacing: 4px;
+  cursor: pointer;
+  border-radius: 0.6rem;
+  transition: var(--transition);
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.btn:hover {
+  background-color: var(--secondary-color);
+  color: whitesmoke;
+  transform: scale(1.1);
+}
+
+/* end of default resets */
+
+.nav-header {
+  display: flex;
+  min-height: 4rem;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0px 2px 4px rgba(7, 7, 7, 0.815);
+}
+
+.nav-header h1 {
+  color: var(--primary-color);
+  letter-spacing: 2px;
+  line-height: 1;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1rem;
+  font-size: 1.8rem;
+  font-weight: 800;
+}
+
+.nav-links li {
+  list-style-type: none;
+}
+
+.nav-links li a {
+  display: block;
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+
+.grid {
+  display: flex;
+  align-items: center;
+  min-height: calc(100vh - 4rem);
+  background-color: var(--background-color);
+}
+
+.text-color {
+  color: var(--primary-color);
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.section-center h3 {
+  text-align: center;
+  width: fit-content;
+  text-transform: capitalize;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.section-background {
+  background-color: var(--text-background-color);
+  padding: 1rem;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
